@@ -12,7 +12,7 @@
 
 ## Overview
 
-The Simple Player Demo is the easiest way to build a quick example that demonstrates the Unity Peer-to-Peer Networking Plugin. This demo shows how you can setup peer-to-peer logic with P2P components and without any P2P-specific scripting.  The P2P Network Transform object allows each peer to create and distribute a player object that is displayed across all of the peers.
+The Simple Player Demo is the easiest way to build a quick example that demonstrates the <a href="https://blainebell.org/P2PPlugin/README.html" target="_blank">Unity Peer-to-Peer Networking Plugin</a>. This demo shows how you can setup peer-to-peer logic with P2P components and without any P2P-specific scripting.  The P2P Network Transform object allows each peer to create and distribute a player object that is displayed across all of the peers.
 
 This tutorial will guide you through implementing and understanding the demo, serving as a foundation for building more complex peer-to-peer multiplayer experiences.
 
