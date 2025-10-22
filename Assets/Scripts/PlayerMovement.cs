@@ -17,9 +17,6 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         controls = new PlayerControls();
 
-        // Subscribe to input
-        // controls.Player.Move.performed += ctx => moveInput = ctx.ReadValue<Vector2>();
-        // controls.Player.Move.canceled += _ => moveInput = Vector2.zero;
         controls.Player.Move.performed += ctx => moveInput = ctx.ReadValue<Vector2>();
         controls.Player.Move.canceled += _ => moveInput = Vector2.zero;
         controls.Player.Scale.performed += ctx => scaleInput = ctx.ReadValue<float>();
@@ -29,20 +26,14 @@ public class PlayerMovement : MonoBehaviour
     void OnEnable() {
         controls.Enable();                 // enable ALL maps
         controls.Player.Enable();          // belt & suspenders: enable the Player map too
-        Debug.Log($"Enabled? Move:{controls.Player.Move.enabled}  Map:{controls.Player.enabled}");
     }
     void OnDisable() {
         controls.Player.Disable();
         controls.Disable();
     }
 
-
     void FixedUpdate()
     {
-        // rb.linearVelocity = moveInput * moveSpeed;
-        // Vector3 v = new Vector3(moveInput.x, 0f, moveInput.y) * moveSpeed;
-        // rb.linearVelocity = v;
-
         // Forward/backward
         float move = moveInput.y * moveSpeed;
         // Left/right rotation
