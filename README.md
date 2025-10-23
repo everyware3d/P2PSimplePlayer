@@ -151,7 +151,7 @@ mark {
 <pre class="hl" href="Assets/Scripts/PlayerMovement.cs" highlight="range-7-13"><code class="language-csharp">    /* Parameters to control player movement */
     public float moveSpeed = 5f;
     public float rotationSpeed = 1f;
-    public float scaleSpeed = 1f;</code></pre></mark><mark style="margin: 0;" data-id="initStartControls"><pre class="onRelease hl" href="Assets/Scripts/PlayerMovement.cs" highlight="range-15-33"><code class="language-csharp">	void Awake(){
+    public float scaleSpeed = 1f;</code></pre></mark><mark style="margin: 0;" data-id="initStartControls"><pre class="onRelease hl" href="Assets/Scripts/PlayerMovement.cs" highlight="range-15-33"><code class="language-csharp">    void Awake(){
 	    initialize and start listening to controls
 	}
 	void OnEnable() {
